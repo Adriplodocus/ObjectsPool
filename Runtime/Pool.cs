@@ -112,9 +112,8 @@ namespace Game.ObjectPool
             pooledObject.ProvidePool(m_pool);
             pooledObject.ProvideInfo(info);
 
-            pooledObject.Generated();
-
             OnItemGenerated(item);
+            pooledObject.Generated();
 
             return item;
         }
