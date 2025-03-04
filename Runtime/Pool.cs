@@ -43,7 +43,10 @@ namespace Game.ObjectPool
                 m_collectionCheck,
                 m_size,
                 m_maxSize);
+        }
 
+        private void Start()
+        {
             GenerateInitialElements();
         }
 
