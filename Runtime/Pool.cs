@@ -63,8 +63,7 @@ namespace Game.ObjectPool
 
         private void OnGet(T obj)
         {
-            if (m_poolBase.onGetContainer)
-                obj.gameObject.transform.SetParent(m_poolBase.onGetContainer);
+            obj.gameObject.transform.SetParent(m_poolBase.onGetContainer);
 
             obj.transform.localPosition = Vector3.zero;
             m_elementsGot.Add(obj);
